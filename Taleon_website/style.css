@@ -1,0 +1,202 @@
+:root {
+  --primary-1: #0b6fb7;
+  --primary-2: #14b6b1;
+  --muted: #5b6470;
+  --bg: #f6fafc;
+  --card: #ffffff;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #071226;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.brand {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.logo-img {
+  height: 56px;
+}
+
+nav a {
+  margin-left: 16px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 36px 0;
+}
+
+.eyebrow {
+  color: var(--primary-2);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 34px;
+  margin: 6px 0;
+}
+
+p.lead {
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.cta {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--primary-1), var(--primary-2));
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(8, 20, 40, 0.06);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin: 36px 0;
+}
+
+.feature {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.feature .icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary-1), var(--primary-2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.product {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(9, 18, 34, 0.06);
+}
+
+footer {
+  padding: 26px 0;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.contact-form {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(8, 18, 32, 0.06);
+}
+
+input, textarea, select, button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e8edf1;
+  margin-top: 8px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.small {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+@media (min-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr 420px
+  }
+  h1 {
+    font-size: 40px
+  }
+  .features {
+    grid-template-columns: 1fr 1fr
+  }
+}
+/* CSS for making YouTube videos responsive */
+.video-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
