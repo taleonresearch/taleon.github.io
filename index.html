@@ -98,7 +98,7 @@
 
         <div class="products" style="margin-top:12px">
 
-          <!-- VIDEO 1 -->
+          
           <div class="product">
             <div class="video-responsive">
               
@@ -108,7 +108,7 @@
             <p class="small">A live field test of our flagship intrusion detection system.</p>
           </div>
 
-          <!-- VIDEO 2 -->
+          
           <div class="product">
             <div class="video-responsive">
              
@@ -137,7 +137,16 @@
   <script>
     document.querySelector('.copyright').innerHTML = document.querySelector('.copyright').innerHTML.replace('{YEAR}', new Date().getFullYear());
   </script>
+  <footer>
+  <p>© <span id="year"></span> Taleon Research. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 
 </html>
+
 
