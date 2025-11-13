@@ -138,15 +138,21 @@
     document.querySelector('.copyright').innerHTML = document.querySelector('.copyright').innerHTML.replace('{YEAR}', new Date().getFullYear());
   </script>
   <footer>
-  <p>© <span id="year"></span> Taleon Research. All rights reserved.</p>
+  <p>© <span id="year"></span> Taleon R&D Private Limtied. All rights reserved.</p>
 </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+<script>  
+  document.addEventListener('DOMContentLoaded', function () {
+    var y = new Date().getFullYear();
+    var el = document.getElementById('year');
+    if (el) el.textContent = y;
+  });
 </script>
+
 
 </body>
 
 </html>
+
 
 
