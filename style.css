@@ -193,11 +193,11 @@ input, textarea, select, button {
     grid-template-columns: 1fr 1fr
   }
 }
-/* CSS for making YouTube videos responsive */
+
 .video-responsive {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%; 
 }
 
 .video-responsive iframe {
@@ -208,4 +208,34 @@ input, textarea, select, button {
   height: 100%;
   border: 0;
 
+}
+.incubator-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.partner-logo {
+  height: 50px; 
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .partner-logo {
+    height: 40px;
+  }
 }
